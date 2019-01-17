@@ -1,0 +1,62 @@
+{
+  "photolists": [
+    {
+      "name": "Karan",
+      "comments": [],
+      "imagelinks": "http://lorempixel.com/300/300/city/1/",
+      "likes": 0,
+      "id": 1
+    },
+    {
+      "name": "Farhan",
+      "comments": [],
+      "imagelinks": "http://lorempixel.com/300/300/city/2/",
+      "likes": 0,
+      "id": 2
+    },
+    {
+      "name": "Raju",
+      "comments": [],
+      "imagelinks": "http://lorempixel.com/300/300/city/3/",
+      "likes": 8,
+      "id": 3
+    },
+    {
+      "name": "Kiara",
+      "comments": [],
+      "imagelinks": "http://lorempixel.com/300/300/city/1/",
+      "likes": 0,
+      "id": 4
+    },
+    {
+      "name": "Karan",
+      "comments": [],
+      "imagelinks": "http://lorempixel.com/300/300/city/2/",
+      "likes": 0,
+      "id": 5
+    },
+    {
+      "name": "Virus",
+      "comments": [
+        {
+          "author": "Karan",
+          "text": "Awesome click"
+        },
+        {
+          "author": "Raju",
+          "text": "Virus"
+        }
+      ],
+      "imagelinks": "http://lorempixel.com/300/300/city/6/",
+      "likes": 4,
+      "id": 6
+    },
+    {
+      "name": "Virus",
+      "comments": [],
+      "imagelinks": "http://lorempixel.com/300/300/city/6/",
+      "likes": 4,
+      "id": 7
+    }
+  ]
+}
