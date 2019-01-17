@@ -1,4 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin")
+const NODE_ENV = "production"
 
 module.exports = {
   output: {

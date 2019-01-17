@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "webpack-dev-server --d ./src/main.js --output ./stage/main.js --open",
+    "build": "webpack-dev-server --d ./src/main.js --output ./stage/main.js --open",
     "prod": "webpack --p ./src/main.js --output ./build/main.js",
     "server": "json-server --watch db.json --port 7777",
     "start-prod": "yarn run prod && cross-env NODE_ENV=production && forever server.js && json-server --watch db.json --port 7777"
