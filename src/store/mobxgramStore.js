@@ -2,7 +2,8 @@ import { extendObservable, action } from "mobx"
 import axios from "axios"
 import sampleStore from "./sampleStore"
 
-const ROOTURL = "http://localhost:7777/photolists"
+// const ROOTURL = "http://localhost:7777/photolists"
+const ROOTURL = "http://"+window.location.hostname+":7777/photolists"
 
 class Mobxgram {
   constructor() {
