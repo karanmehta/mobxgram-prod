@@ -18,7 +18,7 @@ class Mobxgram {
           axios.get(ROOTURL).then((response) => {
             this.mobxgramList.replace(response.data)
           }).catch((e) => {
-            console.log(e)
+            console.log("Could not connect to db. ",e)
           })
         }),
         addPhoto: action((newPhoto) => {
