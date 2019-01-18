@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "webpack-dev-server --mode production main.js --output ./dist/main.js",
-    "prod": "webpack main.js --mode production ./dist/main.js",
+    "build": "webpack --mode production main.js --output ./dist/main.js",
+    "prod": "webpack --mode production main.js --output ./dist/main.js",
     "start-prod": "npm run prod && cross-env NODE_ENV=production && forever server.js"
   },
   "keywords": [],
