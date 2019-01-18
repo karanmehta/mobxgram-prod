@@ -25,7 +25,7 @@ class App extends React.Component {
         mobxgramStore.mobxgramList.length
         ?
         <Switch>
-          <Route exact path="/add-photo" component={AddPhoto} />
+          <Route path="/add-photo" component={AddPhoto} />
           <Route exact path="/" component={MobxgramList} />
           <Route exact path="/:imageName" component={PhotoDetails} />
         </Switch>

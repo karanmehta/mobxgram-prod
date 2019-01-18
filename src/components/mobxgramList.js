@@ -1,6 +1,7 @@
 import React from "react"
 import { observer, inject } from "mobx-react"
 import PhotoItem from "./photoItem"
+import { NavLink } from "react-router-dom"
 
 class MobxgramList extends React.Component {
   render() {
@@ -9,7 +10,7 @@ class MobxgramList extends React.Component {
       <section className="row">
         <section className="col-md-10">
         <section>
-          <a className="btn btn-default" href="/add-photo">Add Photo</a>
+          <NavLink className="btn btn-default" to="/add-photo">Add Photo</NavLink>
         </section>
         <section>
         {
