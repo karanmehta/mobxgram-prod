@@ -2,11 +2,12 @@
   "name": "mobx",
   "version": "1.0.0",
   "scripts": {
-    "start": "forever server.js",
+    "start": "npm run server",
     "build": "npm run prod",
     "prod": "webpack --mode production ./src/main.js --output ./dist/main.js",
     "start-prod": "npm run prod && cross-env NODE_ENV=production && forever server.js",
-    "server": "json-server --watch db.json --port 7777"
+    "server": "json-server --watch db.json --port 7777",
+    "heroku-postbuild": "forever server.js"
   },
   "keywords": [],
   "author": "Karan",
@@ -26,6 +27,7 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
+    "json-server": "^1.0.0",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "forever": "^0.15.3",

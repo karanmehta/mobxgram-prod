@@ -72,8 +72,15 @@
         }
       ],
       "imagelinks": "http://lorempixel.com/300/300/city/9/",
-      "likes": 9,
+      "likes": 22,
       "id": 8
+    },
+    {
+      "name": "Karan",
+      "comments": [],
+      "imagelinks": "http://lorempixel.com/300/300/city/1/",
+      "likes": 0,
+      "id": 9
     }
   ]
 }

@@ -6,7 +6,7 @@ import sampleStore from "./sampleStore"
 
 const { protocol, hostname } = window.location
 let ROOTURL = `${protocol}//${hostname}:7777/photolists`
-
+console.log(ROOTURL)
 class Mobxgram {
   constructor() {
     extendObservable(
