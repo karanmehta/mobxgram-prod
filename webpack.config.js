@@ -28,6 +28,9 @@ module.exports = {
     historyApiFallback: true,
   },
   plugins: [
+    'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+    }),
     new HtmlWebPackPlugin({
       template: "./index.html",
       filename: "./index.html"
