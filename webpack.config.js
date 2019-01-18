@@ -1,6 +1,9 @@
 const webpack = require('webpack')
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin")
+const NODE_ENV = process.env.NODE_ENV || 'production';
+
+console.log('ENV : ' + NODE_ENV)
 
 module.exports = {
   mode: 'production',
