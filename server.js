@@ -17,3 +17,17 @@ var server = app.listen(app.get('port'), function() {
   console.log('listening on port ', server.address().port)
   console.log('ENV : ' + NODE_ENV)
 });
+
+//
+
+const jsonServer = require('json-server');
+const jserver = jsonServer.create();
+const router = jsonServer.router('db.json');
+const middlewares = jsonServer.defaults();
+//const port = process.env.PORT || 7777;
+const port = 7777;
+
+jserver.use(middlewares);
+jserver.use(router);
+
+jserver.listen(port);

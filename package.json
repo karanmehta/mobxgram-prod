@@ -2,7 +2,7 @@
   "name": "mobx",
   "version": "1.0.0",
   "scripts": {
-    "start": "forever server.js && npm run server",
+    "start": "forever server.js",
     "build": "npm run prod",
     "prod": "webpack --mode production ./src/main.js --output ./dist/main.js",
     "start-prod": "npm run prod && cross-env NODE_ENV=production && forever server.js",
