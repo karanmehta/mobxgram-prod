@@ -3,7 +3,9 @@ import axios from "axios"
 import sampleStore from "./sampleStore"
 
 // const ROOTURL = "http://localhost:7777/photolists"
-const ROOTURL = "http://"+window.location.hostname+":7777/photolists"
+
+const { protocol, hostname } = window.location
+let ROOTURL = `${protocol}//${hostname}:7777/photolists`
 
 class Mobxgram {
   constructor() {
