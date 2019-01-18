@@ -27,7 +27,7 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "json-server": "^1.0.0",
+    "json-server": "",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "forever": "^0.15.3",
