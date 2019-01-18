@@ -2,11 +2,11 @@
   "name": "mobx",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack-dev-server --d ./src/main.js --output ./build/main.js --open",
-    "prod": "webpack --p ./src/main.js --output ./build/main.js",
+    "start": "webpack-dev-server --d ./src/main.js --output ./dist/main.js --open",
+    "build": "webpack-dev-server --d ./src/main.js --output ./dist/main.js --open",
+    "prod": "webpack --p ./src/main.js --output ./dist/main.js",
     "server": "json-server --watch db.json --port 7777",
-    "start-prod": "npm run prod && cross-env NODE_ENV=production && forever server.js && json-server --watch db.json --port 7777",
-    "start": "node server.js",
+    "start-prod": "npm run prod && cross-env NODE_ENV=production && forever server.js",
     "heroku-postbuild": "webpack -p"
   },
   "keywords": [],
@@ -17,6 +17,7 @@
     "@babel/plugin-proposal-class-properties": "^7.2.3",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
+    "axios": "^0.18.0",
     "babel-loader": "^8.0.4",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
@@ -26,7 +27,6 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "axios": "^0.18.0",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "forever": "^0.15.3",
