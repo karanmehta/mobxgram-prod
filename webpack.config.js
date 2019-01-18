@@ -1,5 +1,4 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin")
-const NODE_ENV = "production"
 
 module.exports = {
   mode: 'production',
@@ -24,12 +23,11 @@ module.exports = {
       }
     ]
   },
-  devServer: {
-    historyApiFallback: true,
-  },
   plugins: [
-    'process.env': {
+    new webpack.DefinePlugin({
+      'process.env': {
         'NODE_ENV': JSON.stringify('production')
+      }
     }),
     new HtmlWebPackPlugin({
       template: "./index.html",
