@@ -2,6 +2,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin")
 const NODE_ENV = "production"
 
 module.exports = {
+  mode: 'production',
   module: {
     rules: [
       {
@@ -30,6 +31,11 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: "./index.html",
       filename: "./index.html"
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      },
     })
-  ]
+  ],
 };

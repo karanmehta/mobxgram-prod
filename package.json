@@ -2,10 +2,8 @@
   "name": "mobx",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack-dev-server --d main.js --output ./dist/main.js --open",
-    "build": "webpack-dev-server --d main.js --output ./dist/main.js --open",
-    "prod": "webpack --p main.js --output ./dist/main.js",
-    "server": "json-server --watch db.json --port 7777",
+    "start": "webpack-dev-server --mode production main.js --output ./dist/main.js",
+    "prod": "webpack main.js --mode production ./dist/main.js",
     "start-prod": "npm run prod && cross-env NODE_ENV=production && forever server.js"
   },
   "keywords": [],
