@@ -1,3 +1,5 @@
+const webpack = require('webpack')
+const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 
 module.exports = {
@@ -34,4 +36,11 @@ module.exports = {
       filename: "./index.html"
     })
   ],
+  devServer: {
+    contentBase: path.resolve(__dirname, 'dist'),
+    port: 9000,
+    headers: {
+      "Access-Control-Allow-Origin": "*"
+    }
+  },
 };
