@@ -52,17 +52,27 @@
       "id": 6
     },
     {
-      "name": "Virus",
-      "comments": [],
-      "imagelinks": "http://lorempixel.com/300/300/city/6/",
-      "likes": 4,
+      "name": "Ashwin",
+      "comments": [
+        {
+          "author": "Karan",
+          "text": "Awesome click"
+        }
+      ],
+      "imagelinks": "http://lorempixel.com/300/300/city/9/",
+      "likes": 5,
       "id": 7
     },
     {
       "name": "Ashwin",
-      "comments": [],
+      "comments": [
+        {
+          "author": "Karan",
+          "text": "Awesome click"
+        }
+      ],
       "imagelinks": "http://lorempixel.com/300/300/city/9/",
-      "likes": 0,
+      "likes": 9,
       "id": 8
     }
   ]
