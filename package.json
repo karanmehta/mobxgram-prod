@@ -2,7 +2,7 @@
   "name": "mobx",
   "version": "1.0.0",
   "scripts": {
-    "start": "REACT_APP_ENV=production npm run build",
+    "start": "webpack-dev-server --d ./main.js --output ./dist/main.js",
     "build": "REACT_APP_ENV=production && npm run prod && cross-env NODE_ENV=production && forever server.js",
     "prod": "webpack --mode production ./main.js --output ./dist/main.js",
     "start-prod": "npm run prod && cross-env NODE_ENV=production && forever server.js"
