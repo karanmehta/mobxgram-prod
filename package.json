@@ -2,9 +2,9 @@
   "name": "mobx",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack-dev-server --mode production main.js --output ./dist/main.js",
-    "build": "webpack --mode production main.js --output ./dist/main.js",
-    "prod": "webpack --mode production main.js --output ./dist/main.js",
+    "start": "webpack-dev-server --mode production ./main.js --output ./dist/main.js",
+    "build": "npm run prod && cross-env NODE_ENV=production && forever server.js",
+    "prod": "webpack --mode production ./main.js --output ./dist/main.js",
     "start-prod": "npm run prod && cross-env NODE_ENV=production && forever server.js"
   },
   "keywords": [],
