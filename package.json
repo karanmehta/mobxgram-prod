@@ -2,8 +2,8 @@
   "name": "mobx",
   "version": "1.0.0",
   "scripts": {
-    "start": "forever server.js && npm run server",
-    "build": "npm run prod && forever server.js",
+    "start": "forever server.js & npm run server",
+    "build": "npm run prod",
     "prod": "webpack --mode production ./src/main.js --output ./dist/main.js",
     "start-prod": "npm run prod && cross-env NODE_ENV=production && forever server.js",
     "server": "json-server --watch db.json --port 7777"
